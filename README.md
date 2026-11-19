@@ -17,25 +17,25 @@ I used my student ID to calculate the values required for this assignment.
 
 ## Part 1: BusCard Class
 
-In this part, I created a `BusCard` class. It has an owner and a balance. I also added methods to top up the card and pay for bus transport.
+In this part, I created a BusCard class. It has an owner and a balance. I also added methods to top up the card and pay for bus transport.
 
 **Why is there no setter for balance?**
 
-I did not add a setter for the balance because I wanted to control how the balance changes. A user should not be able to put any amount directly into the balance. Instead, the `topUp()` method adds money, and the `pay()` method deducts the fare.
+I did not add a setter for the balance because I wanted to control how the balance changes. A user should not be able to put any amount directly into the balance. Instead, the topUp() method adds money, and the pay() method deducts the fare.
 
 ## Part 2: StudentCard Class
 
-For this part, I created a `StudentCard` class that extends the `BusCard` class. This means it can use the properties and methods of the parent class. I also added a discount for students.
+For this part, I created a StudentCard class that extends the BusCard class. This means it can use the properties and methods of the parent class. I also added a discount for students.
 
-**What is the difference between `/` and `~/` in Dart?**
+**What is the difference between / and ~/ in Dart?**
 
-The `/` operator gives a decimal result, while `~/` gives a whole number by removing the decimal part.
+The / operator gives a decimal result, while ~/ gives a whole number by removing the decimal part.
 
 For example:
-- `10 / 3` gives `3.333333...`
-- `10 ~/ 3` gives `3`
+- 10 / 3 gives 3.333333...
+- 10 ~/ 3 gives 3
 
-I used `~/` when calculating the student discount because the result needs to be a whole number.
+I used ~/ when calculating the student discount because the result needs to be a whole number.
 
 ## Part 3: Main Function
 
@@ -72,9 +72,9 @@ In this part, I was given a program containing errors. I went through the code, 
 
 **Line that was not a bug:**
 
-`Phone p = new Phone('Tecno', 50);`
+Phone p = new Phone('Tecno', 50);
 
-This line was already correct. In Dart, using `new` when creating an object is optional.
+This line was already correct. In Dart, using new when creating an object is optional.
 
 **Output after fixing the program:**
 
@@ -91,7 +91,7 @@ Before running the program, I predicted that the output would be:
 5
 ```
 
-My reason was that the setter does not accept negative values. Also, the `BigBag` class calls the `add()` method from the parent class twice every time it is used.
+My reason was that the setter does not accept negative values. Also, the BigBag class calls the add() method from the parent class twice every time it is used.
 
 **Actual output:**
 
